@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, rgb(116, 0, 116), rgb(248, 33, 98));;
+    min-height: 100vh;
+    font-size: 18px;
+    background-size: cover;
+}
+.container{
+    
+    justify-content: center;
+    width: 320px;
+    max-width: 400px;
+    height: 400px;
+    margin-bottom: 18px;
+    margin-top: 18px;
+    margin-left: 5px;
+    padding: 18px;
+    box-shadow: 0 0 20px rgb(0, 0, 0);
+    background: #ffffff;
+    font-family: sans-serif;
+    border-radius: 5px;
+}
+
+.finput{
+    display: block;
+    padding: 8px;
+    margin: 5px;
+    margin-top: 17px;
+    border-radius: 5px;
+    height: 30px;
+    width: 100%;
+    box-sizing: border-box;
+    outline: none;
+    border: 1px solid grey;
+    background: #eeeeee;
+
+}
+.fbutton{
+    
+    justify-content: center;
+    width: 15em;
+    height: 35px;
+    border-radius: 5px;
+    background:linear-gradient(90deg, rgb(116, 0, 116), rgb(248, 33, 98));
+    font-size: 15px;
+    color: white;
+    border: none;
+}
+.ftext{
+transition: 1s;
+font-size: 15px;
+}

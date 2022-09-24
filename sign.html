@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function mysubmit() {
+            var email = document.getElementById('email')
+            var password = document.getElementById('password')
+
+            if (email.value == "") {
+
+                document.getElementById("ferror").style.visibility = "visible";
+                alert("Null Value");
+                return false;
+
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <form onsubmit="return mysubmit()" action="mailto:omghumre74@gmail.com?subject=mydata" method="POST"
+            enctype="text/plain">
+            <center>
+                <h1 class="ftitle">Sign-In</h1>
+            </center>
+            <br><br>
+            <input type="text" class="finput" id="email" autofocus placeholder=" Email"
+                pattern="^[a-z][a-zA-z0-9\._-]+@[a-z]+.[a-z]{2,3}$" required>
+            <label id="ferror" style="color:red; visibility:hidden;">**Invalid format</label>
+
+            <input type="password" class="finput" id="password" placeholder="Password">
+
+
+            <p class="ftext">
+                <a href="#" class="flink">Forgot your password ?</a>
+            </p><br>
+
+            <center> <button class="fbutton" type="submit" onsubmit="mysubmit()" value="Submit">Login</button></center>
+            <br><br>
+
+            <p class="ftext">
+                <a href="signup.html" class="flink" class="flink">Don't have an account ? SingUp Now</a>
+            </p>
+        </form>
+    </div>
+</body>
+
+</html>
